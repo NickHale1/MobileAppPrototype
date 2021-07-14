@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">FinalProjectPrototype</string>
+    <string name="namesLabel">Names</string>
+    <string name="percentLabel">Percent</string>
+    <string name="submitButton">Submit</string>
+    <string name="youLabel">You</string>
+
+</resources>
