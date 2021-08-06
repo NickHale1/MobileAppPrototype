@@ -9,7 +9,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.FinalProjectPrototype">
-        <activity android:name=".Result2People"></activity>
+        <activity android:name=".UpdateTab"></activity>
+        <activity android:name=".Tabs" />
+        <activity android:name=".Result4People" />
+        <activity android:name=".Result3People" />
+        <activity android:name=".Result2People" />
         <activity android:name=".Percent4People" />
         <activity android:name=".Percent3People" />
         <activity android:name=".Percent2People" />

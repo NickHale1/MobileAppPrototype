@@ -7,6 +7,19 @@
     tools:context=".BillInfo">
 
     <TextView
+        android:id="@+id/errorText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/error"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.59000003" />
+
+    <TextView
         android:id="@+id/totalLabel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -58,19 +71,6 @@
         app:layout_constraintTop_toTopOf="@+id/tipLabel"
         app:layout_constraintVertical_bias="0.52" />
 
-    <EditText
-        android:id="@+id/editNumPeople"
-        android:layout_width="63dp"
-        android:layout_height="46dp"
-        android:ems="10"
-        android:inputType="number"
-        app:layout_constraintBottom_toBottomOf="@+id/numberLabel"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.175"
-        app:layout_constraintStart_toEndOf="@+id/numberLabel"
-        app:layout_constraintTop_toTopOf="@+id/numberLabel"
-        app:layout_constraintVertical_bias="0.555" />
-
     <TextView
         android:id="@+id/numberLabel"
         android:layout_width="wrap_content"
@@ -94,5 +94,17 @@
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.708" />
+        app:layout_constraintVertical_bias="0.708"
+        tools:text="@string/submitButton" />
+
+    <Spinner
+        android:id="@+id/numPeopleSelector"
+        android:layout_width="87dp"
+        android:layout_height="37dp"
+        app:layout_constraintBottom_toBottomOf="@+id/numberLabel"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.202"
+        app:layout_constraintStart_toEndOf="@+id/numberLabel"
+        app:layout_constraintTop_toTopOf="@+id/numberLabel"
+        app:layout_constraintVertical_bias="0.555" />
 </androidx.constraintlayout.widget.ConstraintLayout>

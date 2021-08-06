@@ -6,6 +6,18 @@
     android:layout_height="match_parent"
     tools:context=".Percent2People">
 
+    <TextView
+        android:id="@+id/errorText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/error"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <Button
         android:id="@+id/Percent2Submit"
         android:layout_width="wrap_content"
@@ -17,16 +29,29 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.65999997" />
 
+    <Button
+        android:id="@+id/back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/back"
+        app:layout_constraintBottom_toBottomOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.8" />
+
     <LinearLayout
         android:id="@+id/linearLayout"
         android:layout_width="411dp"
         android:layout_height="622dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="24dp"
         android:orientation="horizontal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.55">
+        app:layout_constraintTop_toTopOf="parent">
 
         <LinearLayout
             android:layout_width="wrap_content"
@@ -43,7 +68,7 @@
                 android:textStyle="bold" />
 
             <TextView
-                android:id="@+id/Percetn2Person1"
+                android:id="@+id/Person1"
                 android:layout_width="match_parent"
                 android:layout_height="45dp"
                 android:textColor="@color/black"
@@ -51,7 +76,7 @@
                 tools:text="@string/app_name" />
 
             <EditText
-                android:id="@+id/Percent2Person2"
+                android:id="@+id/Person2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="10"
@@ -75,14 +100,14 @@
                 android:textStyle="bold" />
 
             <EditText
-                android:id="@+id/Percent2Percent1"
+                android:id="@+id/Percent1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="10"
                 android:inputType="numberDecimal" />
 
             <EditText
-                android:id="@+id/Percent2Percent2"
+                android:id="@+id/Percent2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="10"

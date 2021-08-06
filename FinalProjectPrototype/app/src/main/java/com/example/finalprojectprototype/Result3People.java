@@ -10,19 +10,18 @@ import android.widget.Button;
 import android.widget.TextView;
 
 import java.text.DecimalFormat;
-import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.List;
 
-public class Result2People extends AppCompatActivity {
+public class Result3People extends AppCompatActivity {
+
+    String fileName = "MyTabs";
 
     private static DecimalFormat df = new DecimalFormat("0.00");
-    String fileName = "MyTabs";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_result2_people);
+        setContentView(R.layout.activity_result3_people);
 
         Bundle info = this.getIntent().getExtras();
         float tip = info.getFloat("tipPercent");
@@ -30,13 +29,13 @@ public class Result2People extends AppCompatActivity {
 
         float product = ((tip/100) * total) + total;
 
-        TextView person1 = (TextView) findViewById(R.id.Result2Person1);
-        TextView person2 = (TextView) findViewById(R.id.Result2Person2);
+        TextView person1 = (TextView) findViewById(R.id.Result3Person1);
+        TextView person2 = (TextView) findViewById(R.id.Result3Person2);
+        TextView person3 = (TextView) findViewById(R.id.Result3Person3);
 
-        TextView amount1 = (TextView) findViewById(R.id.Result2Amount1);
-        TextView amount2 = (TextView) findViewById(R.id.Result2Amount2);
-
-        Button confirm = (Button) findViewById(R.id.Confirm2);
+        TextView amount1 = (TextView) findViewById(R.id.Result3Amount1);
+        TextView amount2 = (TextView) findViewById(R.id.Result3Amount2);
+        TextView amount3 = (TextView) findViewById(R.id.Result3Amount3);
 
         person1.setText("You");
         float person1Amount = (info.getFloat("person1Percent")/100) * product;
@@ -47,12 +46,13 @@ public class Result2People extends AppCompatActivity {
         float person2Amount = (info.getFloat("person2Percent")/100) * product;
         amount2.setText("$" + df.format(person2Amount));
 
-        String[] newNames = {info.getString("person2Name")};
-        float[] newAmounts = {person2Amount};
+        person3.setText(info.getString("person3Name"));
+        float person3Amount = (info.getFloat("person3Percent")/100) * product;
+        amount3.setText("$" + df.format(person3Amount));
 
-
-
-
+        Button confirm =(Button) findViewById(R.id.Confirm3);
+        String[] newNames = {info.getString("person2Name"),info.getString("person3Name")};
+        float[] newAmounts = {person2Amount,person3Amount};
 
         confirm.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -100,7 +100,7 @@ public class Result2People extends AppCompatActivity {
                 fs.fileSave(fileName,context,forFile,null,null,null,null);
                 //return home
                 Intent intent = new Intent();
-                intent.setClass(Result2People.this, MainActivity.class);
+                intent.setClass(Result3People.this, MainActivity.class);
                 startActivity(intent);
 
 
@@ -108,9 +108,5 @@ public class Result2People extends AppCompatActivity {
 
             }
         });
-
-
-
-
     }
 }

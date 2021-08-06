@@ -17,12 +17,23 @@ public class MainActivity extends AppCompatActivity {
 
 
         Button billBtn = (Button) findViewById(R.id.newBillBtn);
+        Button tabBtn = (Button)findViewById(R.id.tabsBtn);
         billBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent();
                 intent.setClass(MainActivity.this, BillInfo.class);
                 startActivity(intent);
+            }
+        });
+
+        tabBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent();
+                intent.setClass(MainActivity.this, Tabs.class);
+                startActivity(intent);
+
             }
         });
     }

@@ -4,10 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Result2People">
+    tools:context=".Result4People">
 
     <Button
-        android:id="@+id/Confirm2"
+        android:id="@+id/Confirm4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/confirm"
@@ -15,7 +15,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.71000004" />
+        app:layout_constraintVertical_bias="0.7" />
 
     <Button
         android:id="@+id/back"
@@ -29,7 +29,6 @@
         app:layout_constraintVertical_bias="0.8" />
 
     <LinearLayout
-        android:id="@+id/linearLayout2"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_marginStart="24dp"
@@ -49,7 +48,7 @@
             android:orientation="vertical">
 
             <TextView
-                android:id="@+id/Result2Person1"
+                android:id="@+id/Result4Person1"
                 android:layout_width="match_parent"
                 android:layout_height="48dp"
                 android:text="TextView"
@@ -58,7 +57,25 @@
                 android:textSize="18sp" />
 
             <TextView
-                android:id="@+id/Result2Person2"
+                android:id="@+id/Result4Person2"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:text="TextView"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/Result4Person3"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:text="TextView"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/Result4Person4"
                 android:layout_width="match_parent"
                 android:layout_height="48dp"
                 android:text="TextView"
@@ -74,7 +91,7 @@
             android:orientation="vertical">
 
             <TextView
-                android:id="@+id/Result2Amount1"
+                android:id="@+id/Result4Amount1"
                 android:layout_width="match_parent"
                 android:layout_height="48dp"
                 android:text="TextView"
@@ -83,7 +100,25 @@
                 android:textSize="18sp" />
 
             <TextView
-                android:id="@+id/Result2Amount2"
+                android:id="@+id/Result4Amount2"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:text="TextView"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/Result4Amount3"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:text="TextView"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/Result4Amount4"
                 android:layout_width="match_parent"
                 android:layout_height="48dp"
                 android:text="TextView"
